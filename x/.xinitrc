@@ -51,6 +51,9 @@ fi
 # Compositor
 picom -f &
 
+# polybar
+bash ~/.config/polybar/launch.sh
+
 # wallpaper
 nitrogen --restore &
 

@@ -13,6 +13,3 @@ alias ll='ls -al'
 
 # thingo
 neofetch
-
-export ROS_DOMAIN_ID=42
-source /opt/ros2/galactic/setup.bash
