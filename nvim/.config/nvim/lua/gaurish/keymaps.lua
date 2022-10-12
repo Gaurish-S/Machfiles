@@ -41,10 +41,6 @@ keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 -- Better paste
 keymap("v", "p", '"_dP', opts)
 
--- Insert --
--- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
-
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
@@ -75,3 +71,17 @@ keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opts)
 keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
 keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
+
+-- jdtls
+keymap("n", "<A-o>", "<cmd>lua require'jdtls'.organize_imports()<cr>", opts)
+keymap("n", "crv", "<cmd>lua require('jdtls').extract_variable()<cr>", opts)
+keymap("v", "crv", "<esc><cmd>lua require('jdtls').extract_variable(true)<cr>", opts)
+keymap("n", "crc", "<cmd>lua require('jdtls').extract_constant()<cr>", opts)
+keymap("v", "crc", "<esc><cmd>lua require('jdtls').extract_constant(true)<cr>", opts)
+keymap("v", "crm", "<esc><cmd>lua require('jdtls').extract_method(true)<cr>", opts)
+
+
+-- If using nvim-dap
+-- This requires java-debug and vscode-java-test bundles, see install steps in this README further below.
+keymap("n", "<leader>df", "<cmd>lua require'jdtls'.test_class()<cr>", opts)
+keymap("n", "<leader>dn", "<cmd>lua require'jdtls'.test_nearest_method()<cr>", opts)
