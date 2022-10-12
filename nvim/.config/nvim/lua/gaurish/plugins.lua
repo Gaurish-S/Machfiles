@@ -54,7 +54,12 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"  
   use "hrsh7th/cmp-nvim-lua"
   --jdlts
-  use 'mfussenegger/nvim-jdtls'
+  use "mfussenegger/nvim-jdtls"
+  --dap
+  use "mfussenegger/nvim-dap"
+  use "rcarriga/nvim-dap-ui"
+  use "theHamsta/nvim-dap-virtual-text"
+  use "nvim-telescope/telescope-dap.nvim"
   --telescope
    use "nvim-telescope/telescope.nvim"
   --lsp plugins

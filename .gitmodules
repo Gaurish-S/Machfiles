@@ -1,0 +1,9 @@
+[submodule "java-debug"]
+	path = java-debug
+	url = https://github.com/microsoft/java-debug
+[submodule "nvim/nvim/.config/nvim/java-debug"]
+	path = nvim/nvim/.config/nvim/java-debug
+	url = https://github.com/microsoft/java-debug
+[submodule "nvim/.config/nvim/vscode-java-test"]
+	path = nvim/.config/nvim/vscode-java-test
+	url = https://github.com/microsoft/vscode-java-test.git

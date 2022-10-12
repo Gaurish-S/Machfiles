@@ -72,6 +72,14 @@ local function lsp_keymaps(bufnr)
 end
 
 M.on_attach = function(client, bufnr)
+  if client.name == "jdtls" then
+    vim.lsp.codelens.refresh()
+    if JAVA_DAP_ACTIVE then
+      require("jdtls").setup_dap({ hotcodereplace = "auto" })
+      require("jdtls.dap").setup_dap_main_class_configs()
+    end
+  end
+
   if client.name == "tsserver" then
     client.server_capabilities.document_formatting = false
   end
