@@ -10,6 +10,6 @@ PS1='[\u@\h \W]\$ '
 
 # convenience aliases
 alias ll='ls -al'
+alias lvim="~/.local/bin/lvim"
 
-# thingo
-neofetch
+fish
