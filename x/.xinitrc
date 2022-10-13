@@ -55,7 +55,7 @@ picom -f &
 bash ~/.config/polybar/launch.sh
 
 # wallpaper
-nitrogen --restore &
+feh --bg-scale Downloads/3840x2160-dark-archlinux2.png
 
 # cursor
 xsetroot -cursor_name left_ptr
