@@ -51,9 +51,6 @@ fi
 # Compositor
 picom -f &
 
-# polybar
-bash ~/.config/polybar/launch.sh
-
 # wallpaper
 feh --bg-scale Downloads/3840x2160-dark-archlinux2.png
 
@@ -75,5 +72,5 @@ xmodmap -e 'clear Lock' #ensures you're not stuck in CAPS on mode
 xmodmap -e 'keycode 0x42=Escape' #remaps the keyboard so CAPS LOCK=ESC
 
 # Execute DWM
-exec bspwm
+exec dwm
 
