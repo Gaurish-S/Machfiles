@@ -71,6 +71,11 @@ xrandr --output eDP1 --mode 3840x2160 --rate 60.01
 xmodmap -e 'clear Lock' #ensures you're not stuck in CAPS on mode
 xmodmap -e 'keycode 0x42=Escape' #remaps the keyboard so CAPS LOCK=ESC
 
+# dwm patch loop
+while true; do
+    dwm >/dev/null 2>&1
+done
+
 # Execute DWM
 exec dwm
 
