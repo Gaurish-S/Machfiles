@@ -61,7 +61,7 @@ return packer.startup(function(use)
   use "theHamsta/nvim-dap-virtual-text"
   use "nvim-telescope/telescope-dap.nvim"
   --telescope
-   use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope.nvim"
   --lsp plugins
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple LSP installer 
@@ -69,7 +69,6 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim"
   --nvim tree
   use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua" 
   --snippets
   use "L3MON4D3/LuaSnip"
   use "rafamadriz/friendly-snippets"
@@ -77,6 +76,10 @@ return packer.startup(function(use)
   use "nvim-treesitter/nvim-treesitter"
   --discord presence
   use "andweeb/presence.nvim"
+  --neo tree
+  use "nvim-neo-tree/neo-tree.nvim"
+  use "MunifTanjim/nui.nvim"
+  use "s1n7ax/nvim-window-picker"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
