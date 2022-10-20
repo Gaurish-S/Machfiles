@@ -63,6 +63,7 @@ xbacklight -set 35
 # systemd
 system.ctl start thermald.service
 system.ctl enable thermald.service
+system.ctl enable ntpd.service
 
 # resolution and refreshrate
 xrandr --output eDP1 --mode 3840x2160 --rate 60.01
