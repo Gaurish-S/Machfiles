@@ -73,7 +73,7 @@ keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 
 -- jdtls
-keymap("n", "<A-o>", "<cmd>lua require'jdtls'.organize_imports()<cr>", opts)
+keymap("n", "cro", "<cmd>lua require'jdtls'.organize_imports()<cr>", opts)
 keymap("n", "crv", "<cmd>lua require('jdtls').extract_variable()<cr>", opts)
 keymap("v", "crv", "<esc><cmd>lua require('jdtls').extract_variable(true)<cr>", opts)
 keymap("n", "crc", "<cmd>lua require('jdtls').extract_constant()<cr>", opts)

@@ -52,31 +52,24 @@ fi
 picom -f &
 
 # wallpaper
-feh --bg-scale Downloads/3840x2160-dark-archlinux2.png
+feh --bg-scale Downloads/3840x2160-dark-archlinux2.png &
 
 # cursor
-xsetroot -cursor_name left_ptr
+xsetroot -cursor_name left_ptr &
 
 # brightness
-xbacklight -set 35
+xbacklight -set 35 &
 
 # systemd
-system.ctl start thermald.service
-system.ctl enable thermald.service
-system.ctl enable ntpd.service
+systemctl enable ntpd.service &
 
 # resolution and refreshrate
-xrandr --output eDP1 --mode 3840x2160 --rate 60.01
+xrandr --output eDP1 --mode 3840x2160 --rate 60.01 &
 
 # some key remaps
-xmodmap -e 'clear Lock' #ensures you're not stuck in CAPS on mode
-xmodmap -e 'keycode 0x42=Escape' #remaps the keyboard so CAPS LOCK=ESC
+xmodmap -e 'clear Lock' & #ensures you're not stuck in CAPS on mode
+xmodmap -e 'keycode 0x42=Escape' & #remaps the keyboard so CAPS LOCK=ESC
 
-# dwm patch loop
-while true; do
-    dwm >/dev/null 2>&1
-done
-
-# Execute DWM
-exec dwm
-
+# Execute bspwm
+sxhkd -c ~/.config/sxhkd/sxhkdrc &
+exec bspwm
