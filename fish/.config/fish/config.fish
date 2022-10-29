@@ -1,4 +1,4 @@
 set fish_greeting
-theme_gruvbox dark medium
+set theme_color_scheme nord
 neofetch
 

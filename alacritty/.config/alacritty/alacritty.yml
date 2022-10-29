@@ -114,6 +114,7 @@ window:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
   save_to_clipboard: true
   live_config_reload: true
+  opacity : 0.5
 
 key_bindings:
   - { key: V, mods: Control|Shift, action: Paste }

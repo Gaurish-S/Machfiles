@@ -66,6 +66,9 @@ systemctl enable ntpd.service &
 # resolution and refreshrate
 xrandr --output eDP1 --mode 3840x2160 --rate 60.01 &
 
+# default browser
+xdg-settings set google-chrome-stable
+
 # some key remaps
 xmodmap -e 'clear Lock' & #ensures you're not stuck in CAPS on mode
 xmodmap -e 'keycode 0x42=Escape' & #remaps the keyboard so CAPS LOCK=ESC
