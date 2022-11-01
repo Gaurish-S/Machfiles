@@ -6,6 +6,14 @@
 super + Return
 	alacritty
 
+# chrome
+super + c  
+    google-chrome-stable
+
+# discord
+super + d
+    discord
+
 # program launcher
 super + @space
 	dmenu_run

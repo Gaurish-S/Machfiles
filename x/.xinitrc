@@ -62,6 +62,9 @@ xbacklight -set 35 &
 
 # systemd
 systemctl enable ntpd.service &
+systemctl start ntpd.service &
+hwclock --systohc &
+
 
 # resolution and refreshrate
 xrandr --output eDP1 --mode 3840x2160 --rate 60.01 &

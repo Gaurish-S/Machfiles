@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/gaurish/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "/home/gaurish/.local/share/nvim/site/pack/packer/start/nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/gaurish/.local/share/nvim/site/pack/packer/start/nui.nvim",
